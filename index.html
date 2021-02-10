@@ -1,0 +1,33 @@
+<html>
+<head>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/shaudio.css">
+</head>
+
+
+<body ng-app="myApp"  ng-controller="controller">
+
+<table width="100%">
+    <tr>
+        <td width="30%">--------------</td>
+        <td>
+                <shaudio data-album="" data-url="audio/sample.mp3" id="myAudio"
+                         duration-data="duration"
+                         data-title="Album" data-artist="Artist"
+                         points-data="points"
+                         click-data="selectPoint"
+                         click-frame="selectKeyFrame"
+                >
+                </shaudio>
+        </td>
+        <td width="10%">{{duration}}</td>
+    </tr>
+</table>
+
+
+
+
+</body>
+
+</html>
